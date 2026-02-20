@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Your Gamebook Title</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@300;400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+    --bg1: #0b0f2a;
+    --bg2: #140a28;
+    --accent: #7a5cff;
+    --accent-soft: #9d8cff;
+    --text: #e6e9ff;
+    --text-dim: #aab0d6;
+    --card: rgba(255,255,255,0.04);
+    --border: rgba(255,255,255,0.08);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    color: var(--text);
+    background: radial-gradient(circle at 20% 30%, #1a1140, transparent 40%),
+                radial-gradient(circle at 80% 70%, #0d1a3a, transparent 40%),
+                linear-gradient(160deg, var(--bg1), var(--bg2));
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px 60px 20px;
+}
+
+.title {
+    font-family: Spectral, serif;
+    font-size: 3em;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.subtitle {
+    color: var(--accent-soft);
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+.tagline {
+    margin-top: 20px;
+    color: var(--text-dim);
+}
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 14px;
+    backdrop-filter: blur(6px);
+}
+
+.card h2 {
+    font-family: Spectral, serif;
+    margin-top: 0;
+    color: var(--accent-soft);
+}
+
+.teaser {
+    font-style: italic;
+    color: #d6dbff;
+    white-space: pre-line;
+}
+
+.release-box {
+    border-left: 3px solid var(--accent);
+    padding-left: 15px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 60px;
+    padding: 20px;
+    color: var(--text-dim);
+    font-size: 0.9em;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #5d4bff, #8a63ff);
+    color: white;
+    text-decoration: none;
+    font-size: 0.95em;
+    transition: 0.3s;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.glow {
+    text-shadow: 0 0 8px rgba(122,92,255,0.4);
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <div class="title glow">YOUR GAMEBOOK TITLE</div>
+    <div class="subtitle">An interactive narrative experience</div>
+    <div class="tagline">Fate is written. Your choices decide the rest.</div>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>Teaser</h2>
+        <div class="teaser">
+The wind carried whispers across the dead valley.
+
+You had been warned not to come here.
+
+Yet the road had brought you anyway.
+
+Behind you, the world you knew was already fading.
+
+Ahead, something waited.
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>Release</h2>
+        <div class="release-box">
+            <p><strong>Status:</strong> In development</p>
+            <p><strong>Planned release:</strong> 2026</p>
+            <p><strong>Platform:</strong> Android</p>
+
+            <a href="#" class="button">Follow development</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2>About the Project</h2>
+        <p>
+This project is a narrative-driven gamebook application combining traditional interactive fiction with modern presentation.
+
+It focuses on atmosphere, meaningful choices, and immersion.
+
+Inspired by classic gamebooks, folklore, and dark fantasy traditions.
+        </p>
+
+        <p>
+Developed independently.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>About the Author</h2>
+        <p>
+Independent writer and developer exploring interactive storytelling.
+
+This website will provide updates as development progresses.
+        </p>
+    </div>
+
+</div>
+
+<div class="footer">
+© 2026 Your Name
+</div>
+
+</body>
+</html>
